@@ -5,8 +5,8 @@
 -- Decompilation prepass
 
 local odecompile = getgenv().decompile
-local MaxDecompilationJobs = 7
-local DecompilationTimeout = 300000
+local MaxDecompilationJobs = 5
+local DecompilationTimeout = 30
 local DecompilationWorkers = {}
 local DecompilationCache = {}
 local DecompilationHashIndex = {}
@@ -14,8 +14,8 @@ local DecompileIgnore = {
 	game:GetService("TextChatService"),
 	game:GetService("CoreGui"),
 	game:GetService("CorePackages"),
-game:GetService("Workspace"),
-	game:GetService("StarterGui")
+game:GetService("Workspace")
+	
 }
 
 local function GenerateCheckSum(x)

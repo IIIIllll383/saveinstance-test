@@ -5,8 +5,8 @@
 -- Decompilation prepass
 
 local odecompile = getgenv().decompile
-local MaxDecompilationJobs = 2
-local DecompilationTimeout = 30
+local MaxDecompilationJobs = 7
+local DecompilationTimeout = 300000
 local DecompilationWorkers = {}
 local DecompilationCache = {}
 local DecompilationHashIndex = {}

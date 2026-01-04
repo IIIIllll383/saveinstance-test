@@ -14,7 +14,8 @@ local DecompileIgnore = {
 	game:GetService("TextChatService"),
 	game:GetService("CoreGui"),
 	game:GetService("CorePackages"),
-game:GetService("Workspace")
+game:GetService("Workspace"),
+	game:GetService("StarterGui")
 }
 
 local function GenerateCheckSum(x)
